@@ -2,8 +2,8 @@
 const wedding = {
   couple: { initials: "C&J", bride: "Claudine", groom: "Jojie" },
   date: "2027-12-27T14:00:00+08:00",
-  dateLabel: "December 27, 2027",
-  rsvpDeadline: "November 27, 2027",
+  dateLabel: "January 29, 2027",
+  rsvpDeadline: "January 29, 2027",
   venue: { name: "The Garden Pavilion", address: "Puerto Galera, Oriental Mindoro", map: "https://maps.google.com" },
   ceremony: { time: "2:00 PM", name: "San Isidro Parish Church", address: "Puerto Galera, Oriental Mindoro", map: "https://maps.google.com" },
   reception: { time: "5:00 PM", name: "The Garden Pavilion", address: "Puerto Galera, Oriental Mindoro", map: "https://maps.google.com" },

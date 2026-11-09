@@ -4,9 +4,9 @@ const wedding = {
   date: "2027-12-27T14:00:00+08:00",
   dateLabel: "January 29, 2027",
   rsvpDeadline: "January 29, 2027",
-  venue: { name: "The Garden Pavilion", address: "Puerto Galera, Oriental Mindoro", map: "https://maps.google.com" },
-  ceremony: { time: "2:00 PM", name: "San Isidro Parish Church", address: "Puerto Galera, Oriental Mindoro", map: "https://maps.google.com" },
-  reception: { time: "5:00 PM", name: "The Garden Pavilion", address: "Puerto Galera, Oriental Mindoro", map: "https://maps.google.com" },
+  venue: { name: "Grandiya’s Venue & Restaurant", address: "San Jose, Occidental Mindoro", map: "https://maps.app.goo.gl/T6kVCCbebvQtymKS" },
+  ceremony: { time: "2:00 PM", name: "The St. Joseph the Worker Cathedral", address: "San Jose, Occidental Mindoro", map: "https://maps.app.goo.gl/xW8ojbqtCAD7oQxW" },
+  reception: { time: "5:00 PM", name: "Grandiya’s Venue & Restaurant", address: "San Jose, Occidental Mindoro", map: "https://maps.app.goo.gl/T6kVCCbebvQtymKS" },
   rsvpLink: "https://forms.google.com",
   entourage: [
     { title: "Parents of the Couple", people: [{name:"Mr. & Mrs. Bride's Parents", role:"Parents of the Bride"},{name:"Mr. & Mrs. Groom's Parents", role:"Parents of the Groom"}] },

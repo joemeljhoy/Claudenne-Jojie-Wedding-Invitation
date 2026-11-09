@@ -584,3 +584,39 @@ window.setInterval(
   updateCountdown,
   1000
 );
+
+
+// ======================================================
+// STOP MUSIC WHEN LEAVING OR CLOSING THE WEBSITE
+// ======================================================
+
+function stopMusicWhenLeaving() {
+  if (!music) {
+    return;
+  }
+
+  music.pause();
+  updateMusicButton(false);
+}
+
+
+// Stop music when the browser tab becomes hidden
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    stopMusicWhenLeaving();
+  }
+});
+
+
+// Stop music when leaving or closing the page
+window.addEventListener("pagehide", () => {
+  stopMusicWhenLeaving();
+});
+
+
+// Additional support for some mobile and Messenger browsers
+window.addEventListener("beforeunload", () => {
+  stopMusicWhenLeaving();
+});
+
+

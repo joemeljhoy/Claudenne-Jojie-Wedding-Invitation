@@ -5,9 +5,10 @@
 
 const wedding = {
   couple: {
-    initials: "C&J",
-    bride: "Claudine",
-    groom: "Jojie"
+    initials: "J&C",
+    groom: "Jojie",
+    bride: "Claudenne"
+
   },
 
   // January 29, 2027 at 2:00 PM, Philippine time

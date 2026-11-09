@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f1eb" />
+  <meta name="description" content="Wedding invitation of Claudine and Jojie" />
+  <title>Claudine & Jojie | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="intro-locked">
+  <div id="intro" class="intro" aria-label="Wedding invitation envelope intro">
+    <div class="petal-layer" aria-hidden="true"></div>
+    <button id="skipIntro" class="skip-btn" type="button">Skip intro</button>
+
+    <div class="envelope-stage">
+      <div class="envelope" id="envelope">
+        <div class="invitation-card">
+          <div class="card-border">
+            <p class="tiny">Together with our families</p>
+            <div class="intro-monogram">C<span>&</span>J</div>
+            <h1>Claudine <span>&</span> Jojie</h1>
+            <p class="intro-date" data-wedding-date-label>December 27, 2027</p>
+            <button id="enterSite" class="enter-btn" type="button">Open invitation</button>
+          </div>
+        </div>
+        <div class="envelope-back"></div>
+        <div class="envelope-lining"></div>
+        <div class="flap flap-left"></div>
+        <div class="flap flap-right"></div>
+        <div class="flap flap-bottom"></div>
+        <div class="flap flap-top"></div>
+        <div class="ribbon ribbon-horizontal"></div>
+        <div class="ribbon ribbon-vertical"></div>
+        <button id="seal" class="wax-seal" type="button" aria-label="Open wedding invitation">
+          <span>C<span class="seal-amp">&</span>J</span>
+        </button>
+        <p class="tap-hint">Tap the seal to open</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent" class="site-content" aria-hidden="true">
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Toggle background music">♪</button>
+
+    <section class="hero section">
+      <div class="ornament ornament-top"></div>
+      <p class="eyebrow reveal">Together with our families</p>
+      <div class="monogram reveal">C<span>&</span>J</div>
+      <h1 class="couple-name reveal">Claudine <span>&</span> Jojie</h1>
+      <p class="invite-line reveal">joyfully invite you to celebrate their wedding</p>
+      <div class="date-block reveal">
+        <span data-wedding-day>SATURDAY</span>
+        <strong data-wedding-date-number>27</strong>
+        <span data-wedding-month-year>DECEMBER 2027</span>
+      </div>
+      <p class="venue-name reveal" data-venue-name>The Garden Pavilion</p>
+      <p class="venue-address reveal" data-venue-address>Puerto Galera, Oriental Mindoro</p>
+      <a class="outline-btn reveal" data-map-link href="https://maps.google.com" target="_blank" rel="noopener">View map</a>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="countdown-section section">
+      <p class="script-title reveal">Save the date</p>
+      <h2 class="reveal">Our forever begins in</h2>
+      <div class="countdown reveal" id="countdown">
+        <div><strong id="days">000</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="story section split-section">
+      <div class="photo-frame reveal">
+        <div class="photo-placeholder"><span>Place your prenup photo here</span></div>
+      </div>
+      <div class="section-copy reveal">
+        <p class="script-title">Our love story</p>
+        <h2>Two hearts, one promise</h2>
+        <p>From the moments that brought us together to the promise of a lifetime, we are grateful to celebrate this new chapter with the people we love most.</p>
+        <p class="editable-note">You can replace this paragraph with your real love story.</p>
+      </div>
+    </section>
+
+    <section class="details section">
+      <p class="script-title reveal">Wedding details</p>
+      <h2 class="reveal">When & Where</h2>
+      <div class="detail-grid">
+        <article class="detail-card reveal">
+          <div class="detail-icon">♕</div>
+          <h3>Ceremony</h3>
+          <p class="detail-time" data-ceremony-time>2:00 PM</p>
+          <p data-ceremony-name>San Isidro Parish Church</p>
+          <p data-ceremony-address>Puerto Galera, Oriental Mindoro</p>
+          <a data-ceremony-map href="https://maps.google.com" target="_blank" rel="noopener">Open location</a>
+        </article>
+        <article class="detail-card reveal">
+          <div class="detail-icon">✦</div>
+          <h3>Reception</h3>
+          <p class="detail-time" data-reception-time>5:00 PM</p>
+          <p data-reception-name>The Garden Pavilion</p>
+          <p data-reception-address>Puerto Galera, Oriental Mindoro</p>
+          <a data-reception-map href="https://maps.google.com" target="_blank" rel="noopener">Open location</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="entourage section">
+      <p class="script-title reveal">With the blessing of</p>
+      <h2 class="reveal">Our Wedding Entourage</h2>
+      <div id="entourageList" class="entourage-list"></div>
+    </section>
+
+    <section class="dress-code section split-section reverse">
+      <div class="palette-panel reveal">
+        <div class="palette"><span></span><span></span><span></span><span></span></div>
+        <p>Champagne • Sage • Dusty Rose • Warm Taupe</p>
+      </div>
+      <div class="section-copy reveal">
+        <p class="script-title">What to wear</p>
+        <h2>Dress Code</h2>
+        <p><strong>Formal / Semi-formal</strong></p>
+        <p>We would love to see you in soft, elegant colors that complement our wedding palette. Kindly reserve white and ivory for the couple.</p>
+      </div>
+    </section>
+
+    <section class="notes section">
+      <p class="script-title reveal">A gentle reminder</p>
+      <h2 class="reveal">For our celebration</h2>
+      <div class="note-grid">
+        <article class="note-card reveal"><span>♡</span><h3>Adults-only celebration</h3><p>We respectfully request an adults-only reception, except for children who are part of the entourage.</p></article>
+        <article class="note-card reveal"><span>▣</span><h3>Unplugged ceremony</h3><p>Please keep phones and cameras away during the ceremony and enjoy the moment with us.</p></article>
+        <article class="note-card reveal"><span>✉</span><h3>Gifts</h3><p>Your presence is the greatest gift. If you wish to bless us further, a monetary gift would be sincerely appreciated.</p></article>
+      </div>
+    </section>
+
+    <section class="rsvp section">
+      <div class="rsvp-card reveal">
+        <p class="script-title">Will you join us?</p>
+        <h2>Kindly RSVP</h2>
+        <p>Please respond on or before <strong data-rsvp-deadline>November 27, 2027</strong>.</p>
+        <a id="rsvpButton" class="primary-btn" href="#" target="_blank" rel="noopener">Confirm attendance</a>
+        <small>Update the RSVP link in <strong>script.js</strong> with your Google Form or Messenger link.</small>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-monogram">C<span>&</span>J</div>
+      <p>We cannot wait to celebrate with you.</p>
+      <p class="footer-date" data-wedding-date-label>December 27, 2027</p>
+    </footer>
+  </main>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>

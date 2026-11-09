@@ -55,11 +55,32 @@ function finishIntro(){
   setTimeout(()=>intro.remove(),1100);
   observeReveals();
 }
-function openEnvelope(){
-  if(opening)return; opening=true;
+async function openEnvelope() {
+  if (opening) return;
+
+  opening = true;
+
+  // Start the background music when the wax seal is clicked
+  try {
+    music.volume = 0.5;
+    await music.play();
+
+    $('#musicToggle').classList.add('playing');
+    $('#musicToggle').textContent = '♫';
+  } catch (error) {
+    console.log('Browser prevented autoplay:', error);
+  }
+
+  // Open the envelope
   envelope.classList.add('releasing');
-  setTimeout(()=>envelope.classList.add('open'),650);
-  setTimeout(()=>$('#enterSite').focus(),1750);
+
+  setTimeout(() => {
+    envelope.classList.add('open');
+  }, 650);
+
+  setTimeout(() => {
+    $('#enterSite').focus();
+  }, 1750);
 }
 $('#seal').addEventListener('click',openEnvelope);
 $('#enterSite').addEventListener('click',finishIntro);

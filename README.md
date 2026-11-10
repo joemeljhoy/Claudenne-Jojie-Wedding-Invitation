@@ -11,7 +11,7 @@ https://joemeljhoy.github.io/Claudenne-Jojie-Wedding-Invitation/
 ## Wedding Information
 
 - Couple: Jojie & Claudenne
-- Initials: J&C
+- Initials: JC
 - Wedding date: January 29, 2027
 - Ceremony time: 2:00 PM
 - Reception time: 5:00 PM
